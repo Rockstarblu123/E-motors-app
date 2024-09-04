@@ -1,0 +1,84 @@
+{% extends 'layout'  %}
+{% block title %} registrate {% endblock %}
+{% block content %}
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="E-motors">Hidden brand</a>
+          icono de facebook
+        <i class="fa-brands fa-facebook"></i>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>P
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/templates/singnup.html">inicia sesion</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+<div class="container">
+
+
+    <div class="wrapper"> 
+        
+    <form action="">
+        <h1>login</h1>
+        <div class="input box">
+            <input type="text" placeholder="Username"
+            required>
+            <img class="icons" src="/static/img/icons/bx-user.svg" alt="User">
+        </div>
+        <div class="input box">
+            <input type="password" placeholder="Password"
+            required>
+            <img class="icons" src="/static/img/icons/bxs-lock-alt.svg" alt="lock">
+        </div>
+    
+        <div class="rememeber-forgot">
+            <label> <input type="checkbox">remember me</label>
+            <a href="/templates/forgot password.html" > forgot password? </a>
+        </div>
+    
+        <div class="button">
+            <button class="boton de registro" type="submit">Login</button>
+        </div>
+        <div class="signup">
+            have a account? <a href="/templates/singnup.html">Sign up</a>
+        </div>  
+    
+    
+    </form>
+    
+    </div>
+    
+    
+    
+    </div>
+
+
+
+
+{% endblock %}
