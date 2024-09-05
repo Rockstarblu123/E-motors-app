@@ -1,4 +1,6 @@
 
+
+
 from flask import Flask,render_template, url_for
 
 motors = Flask(__name__)
@@ -13,7 +15,7 @@ def signin():
 
 @motors.route('/singup')
 def singup():
-    return render_template('singnup.html')
+    return render_template('singnup.html') 
         
 if __name__ == '__main__':
     motors.run(debug=True,port=33000)
