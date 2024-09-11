@@ -1,15 +1,13 @@
-class config:
-    SECRET KEY = ´3311546193´
-
+class Config:
+    SECRET_KEY  = 'pollomanhizounviajedelcualnuncavolvio' 
     DEBUG       = True
 
-
-class developmentConfig(config):
-    MYSQL_HOST      = ´localhost´
-    MYSQL_USER      =´root´
-    MYSQL_PASSWORD  =´´
-    MYSQL_DB()      =´E-motors´
+class DevelopmentConfig(Config):
+    MYSLQ_HOST      = 'localhost'
+    MYSLQ_USER      = 'root'
+    MYSLQ_PASSWORD  = ''
+    MYSLQ_DB        = 'lectura'
 
 config = {
-    ´develoment´: developmentConfig
+    'development': DevelopmentConfig
 }
